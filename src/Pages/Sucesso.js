@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import memeImg from "../assets/image/meme-img.jpeg"
 
 const MensagemContainer = styled.div`
   display: flex;
@@ -16,10 +15,6 @@ const Mensagem = styled.div`
   max-width: 500px;
 `
 
-const ImagemMensagem = styled.img`
-  width: 200px;
-`
-
 const TextoMensagem = styled.p`
   font-size: 22px;
   padding: 20px;
@@ -29,8 +24,7 @@ function Sucesso() {
   return (
     <MensagemContainer>
       <Mensagem>
-        <ImagemMensagem src={memeImg} />
-        <TextoMensagem>GRATIDÃO!</TextoMensagem>
+        <TextoMensagem>Request completed</TextoMensagem>
       </Mensagem>
     </MensagemContainer>
   )
